@@ -50,24 +50,27 @@
 
  }
 
+class GetNameOfShape {
 
-class GetName {
+    public String getNameOfShape(Shape o) {
+        return o.getName();
+    }
+
+
+ }
+class GetNameTest {
+
     public static void main(String[] args) {
+        GetNameOfShape h = new GetNameOfShape();
+        Shape circle = new Circle();
         Shape square = new Square();
-        System.out.println(square.getName());
+        Shape rectangle = new Rectangle();
+        Shape triangle = new Triangle();
+        Shape rhombus = new Rhombus();
+        System.out.println(h.getNameOfShape(triangle));
         Filler filler =new Filler("black");
 
-        Shape circle = new Circle();
-        System.out.println(circle.getName());
 
-        Shape rectangle = new Rectangle();
-        System.out.println(rectangle.getName());
-
-        Shape triangle = new Triangle();
-        System.out.println(triangle.getName());
-
-        Shape rhombus = new Rhombus();
-        System.out.println(rhombus.getName());
 
     }
 }
